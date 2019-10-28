@@ -1,0 +1,76 @@
+/*******************************************************************************
+* CSS RESET Based on Eric Meyer and HTML5 Doctor resets
+*******************************************************************************/
+html, body, main, section, footer, h1, h2, h3, p, a, img, ul, li, small {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+html { font-size: 100.01%; } /* fixes old browser resize bugs */
+body { line-height: 1; }
+main, section, footer { display: block; } /* display reset for old browsers */
+ul { list-style: none; }
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/*******************************************************************************
+* SITE
+*******************************************************************************/
+@font-face {
+  font-family: 'LatoLight';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Lato Light'),
+       local('Lato-Light'),
+       url(https://fonts.gstatic.com/s/lato/v11/kcf5uOXucLcbFOydGU24WALUuEpTyoUstqEm5AMlJo4.woff)
+       format('woff');
+}
+
+a { text-decoration: none; }
+a:link, a:visited, a:active { color: #A89984; }
+a:hover { color: #00ABff; }
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-family: monospace;
+  font-size: 1.3em;
+  background: #282828;
+  margin: 20px;
+  color: #F5F5F5;
+  display: flex;
+}
+
+section#card { margin-right: 20px; }
+section#card h2 { display: none; }
+
+section#avatar h3 { display: none; }
+section#avatar img { margin-bottom: 8px; }
+
+section#contacts h3 { display: none; }
+section#contacts ul li { line-height: 1.5em; }
+
+section#profile h2 { display: none; }
+section#profile section h3 { margin-bottom: 20px; color: #CDE432; }
+section#profile section h3:before { content: "# "; }
+section#profile section:first-of-type h3:before { content: ""; }
+section#profile section ul { margin-bottom: 20px; }
+section#profile section ul li { line-height: 1.6em; }
+section#profile section ul li:before { content: "- "; color: #767676; }
+
+@media (max-width: 931px) {
+  body { flex-direction: column; }
+  section#card { margin-bottom: 20px; }
+}
+
+@media (max-width: 612px) {
+  section#profile section h3 { font-size: 0.8em; }
+  section#profile section ul li { font-size: 0.8em; }
+}
