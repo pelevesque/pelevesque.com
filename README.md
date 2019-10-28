@@ -1,5 +1,5 @@
 # About
 
-My personal website.
+My website.
 
 http://www.pelevesque.com
