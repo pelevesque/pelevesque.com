@@ -24,13 +24,17 @@ ul { list-style: none; }
 /*******************************************************************************
 * SITE
 *******************************************************************************/
+@font-face {
+  font-family: 'Plex Mono Regular';
+  src: url('font/IBMPlexMono-Regular.woff2') format('woff2');
+}
+
 a { text-decoration: none; }
 a:link, a:visited, a:active { color: #A89984; }
 a:hover { color: #00ABff; }
 
 body {
-  font-family: monospace;
-  font-size: 1.3em;
+  font-family: 'Plex Mono Regular', monospace;
   background: #282828;
   margin: 20px;
   color: #F5F5F5;
