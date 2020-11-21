@@ -24,22 +24,11 @@ ul { list-style: none; }
 /*******************************************************************************
 * SITE
 *******************************************************************************/
-@font-face {
-  font-family: 'LatoLight';
-  font-style: normal;
-  font-weight: 300;
-  src: local('Lato Light'),
-       local('Lato-Light'),
-       url(https://fonts.gstatic.com/s/lato/v11/kcf5uOXucLcbFOydGU24WALUuEpTyoUstqEm5AMlJo4.woff)
-       format('woff');
-}
-
 a { text-decoration: none; }
 a:link, a:visited, a:active { color: #A89984; }
 a:hover { color: #00ABff; }
 
 body {
-  font-family: 'Lato', sans-serif;
   font-family: monospace;
   font-size: 1.3em;
   background: #282828;
